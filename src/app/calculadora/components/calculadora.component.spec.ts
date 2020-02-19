@@ -1,3 +1,4 @@
+import { browser, By } from 'protractor';
 import { CalculadoraService } from './../services/calculadora.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -6,6 +7,7 @@ import { CalculadoraComponent } from './calculadora.component';
 describe('CalculadoraComponent', () => {
   let component: CalculadoraComponent;
   let fixture: ComponentFixture<CalculadoraComponent>;
+  fixture.detectChanges();
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -24,4 +26,18 @@ describe('CalculadoraComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  /* 
+  beforeEach(() =>{
+    let fixture = TestBed.createComponent(CalculadoraService);
+    component = fixture.componentInstance;
+  });
+  */
+ 
+  
+ 
+
+
+
+
 });
